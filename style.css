@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    padding: 2vw;
+}
+main{
+    width: 100%;
+    border: 1px solid rgb(33, 32, 32);
+    border-radius: 7px;
+    padding: 3vw;
+}
+.page1{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 100%;
+    position: relative;
+}
+.page1 p{
+    font-size:4vw;
+    opacity: 0.7;
+}
+.page1 .heading{
+    width: 70%;
+}
+.page1 .heading h1{
+    font-size: 14vw;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.7vw;
+}
+.page1 .img{
+    width: 100%;
+    margin: 5vw 0;
+}
+.page1 .img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.page2{
+    width: 100%;
+    position: relative;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 100%;
+}
+.top{
+    width: 100%;
+}
+.top p{
+    font-size: 4vw;
+    opacity: 0.8;
+    margin-bottom: 2.5vh;
+}
+.top h1{
+    font-size: 12vw;
+    font-weight: 450;
+    line-height: 1;
+}
+.top button{
+    background-color: black;
+    color: white;
+    padding: 2vw;
+    border-radius: 5px;
+    font-size: 3.5vw;
+    margin: 3vh 0;
+    width: fit-content;
+    cursor: pointer;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(32, 29, 29);
+}
+.bottom{
+    width: 100%;
+}
+.elem{
+    padding: 4vw 1vw;
+}
+.elem svg{
+    width: 14vw;
+    margin: 2.5vh 0;
+}
+.elem h1{
+    font-size: 7vw;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+.elem p{
+    font-size: 3.7vw;
+    font-weight: 380;
+    margin-bottom: 2vh;
+}
+.line1{
+    display: none;
+}
+.page3{
+    width: 100%;
+    position: relative;
+}
+.top3{
+    width: 100%;
+}
+.top3 h1{
+    padding: 2vh 0;
+    padding-top: 6vh;
+    font-size: 8vw;
+    font-weight: 550;
+}
+.top3 p{
+    opacity: 0.8;
+    font-size: 5vw;
+    margin-bottom: 3vh;
+}
+.bottom3{
+    width: 100%;
+}
+.bottom3 .pic{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5vh;
+}
+video{
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.bottom3 h2{
+    font-size: 5vw;
+    font-weight: 500;
+    margin-top: 1vh;
+}
+.bottom3 p{
+    opacity: 0.8;
+}
+.bottom3 .pic:last-child{
+    margin-bottom: 3vh;
+}
+.page4{
+    width: 100%;
+    position: relative;
+    padding: 4vh 0;
+}
+.page4 .flex{
+    display: flex;
+    flex-direction: column;
+}
+.page4 svg{
+    width: 17%;
+    padding-bottom: 5vh;
+}
+.page4 .heading4{
+    width: 100%;
+    padding: 2vw;
+}
+.page4 .heading4 h5{
+    font-size: 3.5vw;
+    opacity: 0.9;
+    font-weight: 500;
+    padding-bottom: 1vh;
+}
+.page4 .heading4 h1{
+    font-size: 14vw;
+    font-weight: 600;
+    line-height: 0.9;
+}
+.page4 .para p{
+    font-size: 4vw;
+    font-weight: 450;
+    opacity: 0.8;
+    line-height: 1.5;
+    margin: 3.5vh 0;
+}
+.page4 .para button{
+    background-color: black;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    padding: 0.7vh 2.6vw;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-size: 4vw;
+    margin-top: 3vh;
+}
+.page4 .line4{
+    display: none;
+}
+.page4 .line{
+    margin-top: 3.5vh;
+}
+.footer{
+    width: 100%;
+    position: relative;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.col1 .title{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+.col1 .title svg{
+    width: 15%;
+    margin-bottom: 4vh;
+}
+.col1 p{
+    font-size: 4vw;
+}
+.col1 p:nth-child(3){
+    margin-bottom: 6vh;
+}
+.col1 .circle{
+    display: flex;
+    gap:2vw;
+}
+.col1 .circle .logo{
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 2vw;
+    margin-bottom: 3vh;
+}
+.col2,.col3,.col4{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 3vh 0;
+}
+.col2 h2,.col3 h2,.col4 h2{
+    font-weight: 550;
+    font-size: 7vw;
+}
+.col2 h4,.col3 h4,.col4 h4{
+    font-weight: 450;
+    font-size: 4vw;
+}
+.col2 button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2vh 3vw;
+    width: fit-content;
+    font-size: 3.2vw;
+}
+.lastdiv{
+    padding: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3vw;
+}
+.lastdiv .right{
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+.lastdiv .left p,.lastdiv .right p{
+    font-size: 4vw;
+}
+
+@media (min-width: 850px) {
+    main{
+        padding-bottom: 0;
+    }
+    .page1 p{
+        font-size:2.8vw;
+        opacity: 0.8;
+    }
+    .page1 .heading{
+        width: 60%;
+    }
+    .page1 .heading h1{
+        font-size: 7.2vw;
+        font-weight: 550;
+        letter-spacing: 0vw;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .page2 .top{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .page2 .top p{
+        font-size: 1.5vw;
+    }
+    .page2 .top h1{
+        font-size: 4vw;
+        font-weight: 450;
+    }
+    .page2 .top button{
+        width: fit-content;
+        font-size: 1.5vw;
+        padding: 1vh 2vw;
+        margin-top: 10vh;
+    }
+    .page2 .bottom{
+        width: 30%;
+    }
+    .page2 .bottom .elem{
+        padding: 5.2vh 0;
+    }
+    .page2 .bottom .elem:nth-child(1){
+        padding-top: 0;
+    }
+    .page2 .bottom svg{
+        width: 16%;
+        margin: 1vh 0;
+    }
+    .page2 .bottom h1{
+        font-size: 1.7vw;
+    }
+    .page2 .bottom p{
+        font-size: 1.3vw;
+        margin-bottom: 0vh;
+    }
+    .page2 .container> .line{
+        width: 1px;
+        height: initial;
+    }
+    .page2 .bottom .line:nth-child(6){
+        display: none;
+    }
+    .line1{
+        width: 100%;
+        height: 1px;
+        display: block;
+        background-color: black;
+        margin: 2vh 0;
+    }
+    .page3 .top3{
+        width: 34%;
+    }
+    .line3{
+        width: 1px;
+        height: initial;
+        margin: 3vh 0;
+    }
+    .page3 .top3 h1{
+        font-size: 3.4vw;
+        line-height: 1.1;
+    }
+    .page3 .top3 p{
+        font-size: 2vw;
+        opacity: 0.8;
+    }
+    .page3 .bottom3{
+        width: 64%;
+    }
+    .bottom3 .images{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vw;
+    }
+    .bottom3 .images h2{
+        font-size: 2vw;
+    }
+    .bottom3 .images p{
+        opacity: 0.9;
+    }
+    .bottom3 .images .pic{
+        width: 48%;
+        height: 50vh;
+    }
+    .bottom3 .images .pic video{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .page3 .line:last-child{
+        margin: 3.5vh 0;
+    }
+    .page4 svg{
+        width: 7%;
+    }
+    .page4 .flex{
+        flex-direction: row;
+        min-height: 70vh;
+        justify-content: space-between;
+    }
+    .page4 .heading4{
+        width: 65%;
+    }
+    .page4 .heading4 h5{
+        font-size: 1.4vw;
+    }
+    .page4 .heading4 h1{
+        font-size: 5.5vw;
+        line-height: 1.1;
+    }
+    .page4 .para{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .page4 .para p{
+        font-size: 1.4vw;
+    }
+    .page4 .para button{
+        width: fit-content;
+        padding: 0.7vh 2.6vw;
+        border-radius: 6px;
+        font-size: 1.5vw;
+        margin-top: 3vh;
+    }
+    .page4 .line4{
+        width: 1px;
+        height: initial;
+        margin-right: 2vw;
+        background-color: black;
+        display: block;
+    }
+    .footer{
+        flex-direction: row;
+        gap: 5vw;
+        width: 100%;
+    }
+    .footer .col1{
+        width: 32%;
+    }
+    .col2,.col3,.col4{
+        width: 25%;
+    }
+    .footer .col1 .title{
+        gap: 1vw;
+        align-items: flex-start;
+    }
+    .footer .col1 .title svg{
+        width: 19%;
+    }
+    .footer .col1 .title h3{
+        font-weight: 500;
+        font-size: 1.7vw;
+    }
+    .footer .col1 p{
+        font-size: 1.3vw;
+    }
+    .footer .col1 .logo{
+        padding: 1vw;
+        cursor: pointer;
+        transition: all ease-in-out 0.20s;
+    }
+    .footer .col1 .logo:hover{
+        background-color: black;
+        color: white;
+    }
+    .footer .line:nth-child(2){
+        width: 2px;
+        height: initial;
+        margin: 0 1vw;
+    }
+    .footer .none{
+        display: none;
+    }
+    .footer .col2 h2,.col3 h2,.col4 h2{
+        font-size: 2.3vw;
+    }
+    .footer .col2 h4,.col3 h4,.col4 h4{
+        font-size: 1.3vw;
+        width: fit-content;
+        position: relative;
+    }
+    .col2 h4::before,.col3 h4::before,.col4 h4::before{
+        content: "";
+        width: 0%;
+        position: absolute;
+        height: 1.5px;
+        background-color: black;
+        top: 3.3vh;
+        transition: width ease-in 0.21s;
+    }
+    .col2 h4:hover::before,.col3 h4:hover::before,.col4 h4:hover::before{
+        width: 100%;
+    }
+    .col2 button{
+        font-size: 1vw;
+        padding: 0.5vw 1vw;
+    }
+    .lastline{
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+    .lastdiv{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .lastdiv .right{
+        display: flex;
+        gap: 2vw;
+    }
+    .lastdiv .left p,.lastdiv .right p{
+        font-size: 1.2vw;
+    }
+}
