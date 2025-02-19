@@ -23,6 +23,7 @@ menu.addEventListener("click", () => {
 
 outer.addEventListener("click", () => {
   if (flag == "white") {
+    inner.innerHTML=`<i class="ri-moon-fill"></i>`
     flag="black";
     outer.style.borderColor="white";
     inner.style.borderColor="white";
@@ -36,6 +37,7 @@ outer.addEventListener("click", () => {
     Array.from(svg).forEach(svgcolor);
   }
   else{
+    inner.innerHTML=`<i class="ri-sun-line"></i>`
     flag="white";
     outer.style.borderColor="black";
     inner.style.borderColor="black";

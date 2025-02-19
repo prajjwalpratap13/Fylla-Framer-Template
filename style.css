@@ -84,6 +84,9 @@ nav .title h3{
     border-radius: 20px;
     left: 0;
     transition: left ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-flex .menu i{
     font-size: 7vw;
